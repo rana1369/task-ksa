@@ -1,0 +1,680 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="description" content="جمعية رعاية مبتوري الأطراف - تقديم الرعاية الصحية لمستخدمي الأطراف الصناعية" />
+  <title>جمعية رعاية مبتوري الأطراف</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet" />
+  <link rel="stylesheet" href="css/variables.css" />
+  <link rel="stylesheet" href="css/main.css" />
+  <link rel="stylesheet" href="css/home.css" />
+</head>
+
+<body>
+
+  <div class="home-page">
+    <!-- Header -->
+    <header class="header" role="banner">
+      <div class="header-content">
+        <div class="header-wrapper">
+          <a href="/" class="logo-link" aria-label="الصفحة الرئيسية">
+            <img class="logo" src="https://c.animaapp.com/mbhuc3ztEKGe70/img/image-9.png" alt="شعار الجمعية" />
+          </a>
+
+          <nav class="main-nav" role="navigation" aria-label="القائمة الرئيسية">
+            <button class="mobile-menu-toggle d-md-none" id="mobile-menu-toggle" aria-expanded="false"
+              aria-label="فتح القائمة">
+              <span></span>
+              <span></span>
+              <span></span>
+            </button>
+
+            <ul class="nav-list" id="mobile-menu">
+              <li><a href="#about" class="nav-link">عن بتور</a></li>
+              <li><a href="#programs" class="nav-link">البرامج</a></li>
+              <li><a href="prosthetic-care.html" class="nav-link">العناية بالاطراف الصناعية</a></li>
+              <li><a href="#about-us" class="nav-link">من نحن</a></li>
+              <li><a href="#articles" class="nav-link">المقالات</a></li>
+              <li><a href="#media" class="nav-link">المركز الاعلامي</a></li>
+            </ul>
+          </nav>
+
+          <div class="header-actions">
+            <button class="theme-toggle" id="theme-toggle" aria-label="تبديل الوضع الداكن">
+              <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path
+                  d="M10 3V1M10 19V17M17 10H19M1 10H3M15.657 15.657L16.97 16.97M3.343 3.343L4.657 4.657M15.657 4.343L16.97 3.03M3.343 16.657L4.657 15.343"
+                  stroke="currentColor" stroke-width="2" stroke-linecap="round" />
+                <circle cx="10" cy="10" r="3" stroke="currentColor" stroke-width="2" />
+              </svg>
+            </button>
+            <a href="#cart" class="cart-icon" aria-label="سلة التسوق">
+              <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path
+                  d="M2 1.75H3.74023C4.32535 1.75006 4.8803 1.99821 5.27734 2.4248H5.27832C5.50044 2.67166 5.66122 2.95434 5.74902 3.26562L5.85156 3.62988H18.7197C19.5392 3.62988 20.2919 3.93289 20.8643 4.48047L20.9766 4.59375C21.5512 5.22274 21.8401 6.03428 21.7715 6.90039V6.9043L21.2314 14.4043L21.2305 14.4102C21.1365 15.9712 19.7605 17.2498 18.1904 17.25H7.54004C6.69104 17.25 5.87474 16.8891 5.29883 16.2617C4.72254 15.6338 4.42969 14.7913 4.49805 13.9414L5.32715 3.9873L5.32812 3.98828C5.37284 3.52625 5.2067 3.08855 4.90918 2.7627C4.59894 2.42298 4.17218 2.25012 3.73047 2.25H2C1.86614 2.25 1.75 2.13386 1.75 2C1.75 1.86614 1.86614 1.75 2 1.75ZM5.78027 4.58789L5.00195 13.9766C4.9398 14.6976 5.17757 15.3849 5.65918 15.916C6.14759 16.4545 6.82446 16.7402 7.54004 16.7402H18.1904C19.495 16.74 20.6483 15.6552 20.748 14.3584L20.749 14.3555L21.2891 6.85547V6.85352C21.3377 6.13481 21.105 5.43406 20.6113 4.91504C20.1235 4.39257 19.4515 4.11047 18.7305 4.11035H5.78027V4.58789Z"
+                  fill="currentColor" stroke="currentColor" />
+                <path
+                  d="M16.25 22.75C15.15 22.75 14.25 21.85 14.25 20.75C14.25 19.65 15.15 18.75 16.25 18.75C17.35 18.75 18.25 19.65 18.25 20.75C18.25 21.85 17.35 22.75 16.25 22.75ZM16.25 20.25C15.97 20.25 15.75 20.47 15.75 20.75C15.75 21.03 15.97 21.25 16.25 21.25C16.53 21.25 16.75 21.03 16.75 20.75C16.75 20.47 16.53 20.25 16.25 20.25Z"
+                  fill="currentColor" />
+                <path
+                  d="M8.25 22.75C7.15 22.75 6.25 21.85 6.25 20.75C6.25 19.65 7.15 18.75 8.25 18.75C9.35 18.75 10.25 19.65 10.25 20.75C10.25 21.85 9.35 22.75 8.25 22.75ZM8.25 20.25C7.97 20.25 7.75 20.47 7.75 20.75C7.75 21.03 7.97 21.25 8.25 21.25C8.53 21.25 8.75 21.03 8.75 20.75C8.75 20.47 8.53 20.25 8.25 20.25Z"
+                  fill="currentColor" />
+                <path
+                  d="M21 8.75H9C8.59 8.75 8.25 8.41 8.25 8C8.25 7.59 8.59 7.25 9 7.25H21C21.41 7.25 21.75 7.59 21.75 8C21.75 8.41 21.41 8.75 21 8.75Z"
+                  fill="currentColor" />
+              </svg>
+
+            </a>
+            <a href="#login" class="btn btn-primary login-button">تسجيل الدخول</a>
+          </div>
+        </div>
+      </div>
+    </header>
+
+    <main id="main-content" role="main">
+      <!-- Hero Section -->
+      <section class="hero animate-on-scroll" aria-labelledby="hero-title">
+        <div class="container">
+          <div class="row align-items-center">
+            <div class="col-lg-8">
+              <div class="hero-text">
+                <h1 id="hero-title" class="hero-title">تقديم الرعاية الصحية لمستخدمي الاطراف الصناعية من الأطفال والشباب
+                </h1>
+                <p class="hero-description">
+                  من خلال مبادرات الرعاية الصحية الخيرية لدينا، نقدم الخدمات الطبية الأساسية والعلاجات والدعم للأطفال
+                  والشباب مبتوري الاطراف، ورعاية رفاههم وتمكينهم من الازدهار.
+                </p>
+                <div class="hero-cta">
+                  <a href="#donate" class="btn btn-primary">التبرع الان</a>
+                  <a href="tel:966 675 656" class="btn btn-secondary">
+                    <img src="https://c.animaapp.com/mbhuc3ztEKGe70/img/warning-2.svg" alt="اتصل بنا"
+                      aria-hidden="true" />
+                    <span class="btn-secondary-text">+966 675 656</span>
+                  </a>
+                </div>
+              </div>
+            </div>
+
+          </div>
+
+        </div>
+      </section>
+
+      <!-- Services Section -->
+      <section class="services animate-on-scroll" id="services" aria-labelledby="services-title">
+        <div class="container">
+          <div class="section-header text-center mb-5">
+            <h2 id="services-title" class="section-title">تعزيز صحة الأطفال والشباب مبتوري الاطراف وسعادتهم</h2>
+            <p class="section-subtitle ">تحسين صحة مبتوري الاطراف من خلال تزويدهم بالاطراف الصناعية</p>
+          </div>
+          <div class="row g-4">
+            <div class="col-md-4">
+              <div class="service-card">
+                <div class="service-icon">
+                  <img src="https://c.animaapp.com/mbhuc3ztEKGe70/img/global.svg" alt="الرعاية الصحية الأولية"
+                    aria-hidden="true" />
+                </div>
+                <h3 class="service-title">الرعاية الصحية الأولية</h3>
+                <p class="service-description">
+                  تقديم رعاية طبية حيوية مصممة خصيصًا لتلبية الاحتياجات الفريدة لمبتوري الاطراف، وضمان صحتهم ورفاههم
+                  بشكل عام.
+                </p>
+              </div>
+            </div>
+            <div class="col-md-4">
+              <div class="service-card">
+                <div class="service-icon">
+                  <img src="https://c.animaapp.com/mbhuc3ztEKGe70/img/global.svg" alt="الدعم المالي"
+                    aria-hidden="true" />
+                </div>
+                <h3 class="service-title">الدعم المالي</h3>
+                <p class="service-description">
+                  التمويل لضمان حصول مبتوري الاطراف علي الاطراف الصناعية من أجل النمو والتطور الصحي.
+                </p>
+              </div>
+            </div>
+            <div class="col-md-4">
+              <div class="service-card">
+                <div class="service-icon">
+                  <img src="https://c.animaapp.com/mbhuc3ztEKGe70/img/global.svg" alt="الصحة النفسية"
+                    aria-hidden="true" />
+                </div>
+                <h3 class="service-title">الصحة النفسية</h3>
+                <p class="service-description">
+                  دعم الصحة النفسية من خلال خدمات استشارية شاملة لمبتوري الاطراف، ومصادر تعليمية.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Partners Section -->
+      <section class="partners animate-on-scroll" aria-labelledby="partners-title">
+        <div class="container">
+          <h2 id="partners-title" class="partners-title text-center mb-4">تعزيز الوحدة والتعاون مع شركائنا المتفانين
+          </h2>
+          <div class="row justify-content-between align-items-center mx-0 " dir="ltr">
+            <div class="col-6 col-md-4 col-lg-2 text-center">
+              <img src="https://c.animaapp.com/mbhuc3ztEKGe70/img/amity-logo5--1--1.png" alt="شريك 1"
+                class="partner-logo img-fluid" />
+            </div>
+            <div class="col-6 col-md-4 col-lg-2 text-center">
+              <img src="https://c.animaapp.com/mbhuc3ztEKGe70/img/amity-logo2-1.png" alt="شريك 2"
+                class="partner-logo img-fluid" />
+            </div>
+            <div class="col-6 col-md-4 col-lg-2 text-center">
+              <img src="https://c.animaapp.com/mbhuc3ztEKGe70/img/amity-logo4--1--1.png" alt="شريك 3"
+                class="partner-logo img-fluid" />
+            </div>
+            <div class="col-6 col-md-4 col-lg-2 text-center">
+              <img src="https://c.animaapp.com/mbhuc3ztEKGe70/img/amity-logo1-1.png" alt="شريك 4"
+                class="partner-logo img-fluid" />
+            </div>
+            <div class="col-6 col-md-4 col-lg-2 text-center">
+              <img src="https://c.animaapp.com/mbhuc3ztEKGe70/img/amity-logo3-1.png" alt="شريك 5"
+                class="partner-logo img-fluid" />
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Programs Section -->
+      <section class="programs animate-on-scroll" id="programs" aria-labelledby="programs-title">
+        <div class="container">
+          <div class="section-header text-center mb-5">
+            <h2 id="programs-title" class="section-title">برامج الرعاية الصحية لمبتوري الاطراف</h2>
+            <div class="d-flex justify-content-center w-100">
+              <p class="section-subtitle w-75">الأسباب والبرامج الحيوية في انتظار تبرعاتكم، ادعموا مبتوري الاطراف</p>
+
+            </div>
+          </div>
+          <div class="row g-4 mb-4">
+            <div class="col-lg-6">
+              <div class="program-card">
+                <img src="https://c.animaapp.com/mbhuc3ztEKGe70/img/rectangle-4.png" alt="أرجل صناعية T-4040"
+                  class="program-image" />
+                <div class="program-content">
+                  <h3 class="program-title">أرجل صناعية T-4040</h3>
+                  <p class="program-description">
+                    هناك حقيقة مثبتة منذ زمن طويل وهي أن المحتوى المقروء لصفحة ما سيلهي القارئ عن التركيز على الشكل
+                    الخارجي للنص أو شكل توضع الفقرات في الصفحة التي يقرأها.
+                  </p>
+                  <div class="program-progress">
+                    <div class="progress-bar">
+                      <div class="progress" style="width: 40%" role="progressbar" aria-valuenow="40" aria-valuemin="0"
+                        aria-valuemax="100"></div>
+                    </div>
+                    <div class="progress-stats">
+                      <div class="progress-amount">
+                        <span class="current-amount">900 ر.س</span>
+                        <span class="total-amount">من 1900 ر.س</span>
+                      </div>
+                      <div class="progress-donors">
+                        <span class="donors-count">2</span>
+                        <span class="donors-label">متبرعين</span>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="program-actions">
+                    <a href="#donate" class="btn btn-primary donate-button">تبرع الأن</a>
+                    <button class="btn btn-secondary add-to-cart" aria-label="إضافة إلى السلة">
+                      <img src="https://c.animaapp.com/mbhuc3ztEKGe70/img/shopping-cart.svg" alt=""
+                        aria-hidden="true" />
+                    </button>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col-lg-6">
+              <div class="program-card">
+                <img src="https://c.animaapp.com/mbhuc3ztEKGe70/img/rectangle-4-2.png" alt="أرجل صناعية T-4040"
+                  class="program-image" />
+                <div class="program-content">
+                  <h3 class="program-title">أرجل صناعية T-4040</h3>
+                  <p class="program-description">
+                    هناك حقيقة مثبتة منذ زمن طويل وهي أن المحتوى المقروء لصفحة ما سيلهي القارئ عن التركيز على الشكل
+                    الخارجي للنص أو شكل توضع الفقرات في الصفحة التي يقرأها.
+                  </p>
+                  <div class="program-progress">
+                    <div class="progress-bar">
+                      <div class="progress" style="width: 40%" role="progressbar" aria-valuenow="40" aria-valuemin="0"
+                        aria-valuemax="100"></div>
+                    </div>
+                    <div class="progress-stats">
+                      <div class="progress-amount">
+                        <span class="current-amount">900 ر.س</span>
+                        <span class="total-amount">من 1900 ر.س</span>
+                      </div>
+                      <div class="progress-donors">
+                        <span class="donors-count">2</span>
+                        <span class="donors-label">متبرعين</span>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="program-actions">
+                    <a href="#donate" class="btn btn-primary donate-button">تبرع الأن</a>
+                    <button class="btn btn-secondary add-to-cart" aria-label="إضافة إلى السلة">
+                      <img src="https://c.animaapp.com/mbhuc3ztEKGe70/img/shopping-cart.svg" alt=""
+                        aria-hidden="true" />
+                    </button>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="text-center">
+            <a href="#all-programs" class="btn btn-primary view-all-button">عرض جميع الحالات</a>
+          </div>
+        </div>
+      </section>
+
+      <!-- Impact Section -->
+      <section class="impact animate-on-scroll" aria-labelledby="impact-title">
+        <div class="container">
+          <div class="row g-4 text-center" dir="ltr">
+            <div class="col-6 col-md-3">
+              <div class="impact-item">
+                <img src="https://c.animaapp.com/mbhuc3ztEKGe70/img/artificial-limb.svg" alt="توفير الاطراف الصناعية"
+                  class="impact-icon" aria-hidden="true" />
+                <div class="impact-content">
+                  <span class="impact-number">90</span>
+                  <span class="impact-label">توفير الاطراف الصناعية</span>
+                </div>
+              </div>
+            </div>
+            <div class="col-6 col-md-3">
+              <div class="impact-item">
+                <div class="impact-icon physiotherapy" aria-hidden="true"></div>
+                <div class="impact-content">
+                  <span class="impact-number">800</span>
+                  <span class="impact-label">جلسات العلاج الطبيعي</span>
+                </div>
+              </div>
+            </div>
+            <div class="col-6 col-md-3">
+              <div class="impact-item">
+                <div class="impact-icon hormones" aria-hidden="true">
+                  <img src="https://c.animaapp.com/mbhuc3ztEKGe70/img/group-1.png" alt="تأمين مواد استهلاكية"
+                    class="impact-icon-image" />
+                </div>
+                <div class="impact-content">
+                  <span class="impact-number">600</span>
+                  <span class="impact-label">تأمين مواد استهلاكية (السليكون - لاينر)</span>
+                </div>
+              </div>
+            </div>
+            <div class="col-6 col-md-3">
+              <div class="impact-item">
+                <div class="impact-icon hormones" aria-hidden="true">
+                  <svg width="64" height="64" viewBox="0 0 64 64" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path
+                      d="M45.9992 16H47.9992V18C47.9992 18.2652 48.1045 18.5196 48.292 18.7071C48.4796 18.8946 48.7339 19 48.9992 19H52.999C53.2642 19 53.5186 18.8946 53.7061 18.7071C53.8937 18.5196 53.999 18.2652 53.999 18V16H55.999C56.2642 16 56.5186 15.8946 56.7061 15.7071C56.8937 15.5196 56.999 15.2652 56.999 15V11C56.999 10.7348 56.8937 10.4804 56.7061 10.2929C56.5186 10.1054 56.2642 10 55.999 10H53.999V8C53.999 7.73478 53.8937 7.48043 53.7061 7.29289C53.5186 7.10536 53.2642 7 52.999 7H48.9992C48.7339 7 48.4796 7.10536 48.292 7.29289C48.1045 7.48043 47.9992 7.73478 47.9992 8V10H45.9992C45.734 10 45.4796 10.1054 45.2921 10.2929C45.1046 10.4804 44.9992 10.7348 44.9992 11V15C44.9992 15.2652 45.1046 15.5196 45.2921 15.7071C45.4796 15.8946 45.734 16 45.9992 16ZM46.9992 12H48.9992C49.2644 12 49.5187 11.8946 49.7062 11.7071C49.8937 11.5195 49.9991 11.2652 49.9991 11V9H51.9991V11C51.9991 11.2652 52.1044 11.5196 52.292 11.7071C52.4795 11.8946 52.7338 12 52.999 12H54.999V14H52.999C52.7338 14 52.4795 14.1054 52.292 14.2929C52.1044 14.4804 51.9991 14.7348 51.9991 15V17H49.9991V15C49.9991 14.7348 49.8937 14.4805 49.7062 14.2929C49.5187 14.1054 49.2644 14 48.9992 14H46.9992V12ZM20.9997 33C19.0219 33 17.0885 33.5864 15.4439 34.6852C13.7994 35.784 12.5177 37.3458 11.7608 39.173C11.0039 41.0003 10.8058 43.011 11.1916 44.9508C11.5775 46.8906 12.5299 48.6725 13.9284 50.071C15.3269 51.4695 17.1087 52.422 19.0485 52.8078C20.9884 53.1937 22.999 52.9957 24.8263 52.2388C26.6536 51.4819 28.2154 50.2002 29.3142 48.5557C30.413 46.9112 30.9995 44.9778 30.9995 43C30.9966 40.3488 29.9421 37.8069 28.0674 35.9322C26.1927 34.0575 23.6509 33.003 20.9997 33ZM20.9997 51C19.4174 51 17.8707 50.5308 16.5551 49.6518C15.2395 48.7728 14.2141 47.5234 13.6086 46.0616C13.0031 44.5997 12.8446 42.9912 13.1533 41.4394C13.4619 39.8875 14.2239 38.462 15.3427 37.3432C16.4615 36.2244 17.887 35.4624 19.4388 35.1537C20.9907 34.845 22.5992 35.0035 24.061 35.609C25.5228 36.2144 26.7723 37.2398 27.6513 38.5554C28.5304 39.871 28.9996 41.4177 28.9996 43C28.9972 45.121 28.1536 47.1544 26.6538 48.6542C25.1541 50.1539 23.1207 50.9976 20.9997 51Z"
+                      fill="#897AE3" />
+                    <path
+                      d="M20.9997 39C20.2086 39 19.4352 39.2346 18.7774 39.6741C18.1196 40.1136 17.6069 40.7383 17.3041 41.4692C17.0014 42.2001 16.9222 43.0044 17.0765 43.7803C17.2308 44.5563 17.6118 45.269 18.1712 45.8284C18.7306 46.3878 19.4433 46.7688 20.2193 46.9231C20.9952 47.0775 21.7994 46.9983 22.5304 46.6955C23.2613 46.3928 23.886 45.8801 24.3255 45.2223C24.765 44.5645 24.9996 43.7911 24.9996 43C24.9984 41.9395 24.5766 40.9228 23.8268 40.1729C23.0769 39.423 22.0602 39.0012 20.9997 39ZM18.9998 43C18.9998 42.6044 19.1171 42.2178 19.3368 41.8889C19.5566 41.56 19.869 41.3036 20.2344 41.1522C20.5999 41.0009 21.002 40.9613 21.39 41.0384C21.7779 41.1156 22.1343 41.3061 22.414 41.5858C22.6937 41.8655 22.8842 42.2219 22.9613 42.6099C23.0385 42.9978 22.9989 43.4 22.8475 43.7654C22.6961 44.1309 22.4398 44.4432 22.1109 44.663C21.7819 44.8827 21.3953 45 20.9997 45C20.4694 44.9995 19.9611 44.7886 19.5861 44.4136C19.2112 44.0386 19.0003 43.5303 18.9998 43ZM39.9993 51C39.8015 51 39.6082 51.0586 39.4438 51.1685C39.2793 51.2784 39.1511 51.4346 39.0754 51.6173C38.9997 51.8 38.9799 52.0011 39.0185 52.1951C39.0571 52.389 39.1523 52.5672 39.2921 52.7071C39.432 52.8469 39.6102 52.9422 39.8042 52.9808C39.9981 53.0194 40.1992 52.9996 40.3819 52.9239C40.5647 52.8482 40.7209 52.72 40.8307 52.5556C40.9406 52.3911 40.9993 52.1978 40.9993 52C40.9993 51.7348 40.8939 51.4805 40.7064 51.2929C40.5189 51.1054 40.2645 51 39.9993 51Z"
+                      fill="#897AE3" />
+                    <path
+                      d="M56.4951 42.3369C56.2767 42.009 55.9959 41.7273 55.6685 41.508C55.3412 41.2887 54.9739 41.136 54.5876 41.0588C54.2012 40.9815 53.8034 40.9811 53.4169 41.0577C53.0304 41.1342 52.6628 41.2862 52.3351 41.5049L46.3521 45.4931L43.9993 36.8658V34C43.9981 32.9395 43.5763 31.9228 42.8264 31.1729C42.0766 30.4231 41.0599 30.0012 39.9994 30H38.9994V23C38.9985 22.2046 38.6822 21.4421 38.1198 20.8796C37.5574 20.3172 36.7948 20.0009 35.9995 20H20.2576L17.9305 9.35889C17.7814 8.69184 17.4103 8.09515 16.8779 7.66652C16.3455 7.23789 15.6834 7.00272 14.9999 6.99951H10C9.20435 6.99951 8.44129 7.31558 7.87868 7.87819C7.31607 8.4408 7 9.20386 7 9.99951C7 10.7952 7.31607 11.5582 7.87868 12.1208C8.44129 12.6834 9.20435 12.9995 10 12.9995H12.5854L16.2692 29.8403C13.8581 30.7078 11.7315 32.2206 10.1214 34.2139C8.5112 36.2072 7.47927 38.6043 7.1381 41.1439C6.79693 43.6834 7.15963 46.2679 8.18664 48.6154C9.21366 50.963 10.8656 52.9835 12.9622 54.4565C15.0588 55.9296 17.5196 56.7987 20.0763 56.969C22.6331 57.1393 25.1874 56.6044 27.4609 55.4224C29.7344 54.2405 31.6398 52.457 32.9691 50.2665C34.2985 48.0759 35.0008 45.5624 34.9995 43C34.9995 42.6625 34.9725 42.3317 34.9489 42H37.9995C38.3409 41.9966 38.6792 41.9343 38.9994 41.8157V47.1011C37.7854 47.3489 36.7066 48.0386 35.9722 49.0366C35.2379 50.0346 34.9002 51.2697 35.0248 52.5025C35.1493 53.7353 35.7271 54.8779 36.6463 55.7089C37.5654 56.5398 38.7603 56.9999 39.9994 56.9999C41.2384 56.9999 42.4333 56.5398 43.3525 55.7089C44.2716 54.8779 44.8494 53.7353 44.974 52.5025C45.0985 51.2697 44.7608 50.0346 44.0265 49.0366C43.2921 48.0386 42.2134 47.3489 40.9993 47.1011V38H42.2354L45.0176 48.2017C45.0514 48.7258 45.2226 49.2318 45.514 49.6688C45.8054 50.1058 46.2068 50.4582 46.6777 50.6908C47.1486 50.9234 47.6724 51.0278 48.1965 50.9937C48.7206 50.9595 49.2265 50.7879 49.6632 50.4961L55.6631 46.4966C55.9909 46.2781 56.2725 45.9973 56.4917 45.67C56.711 45.3427 56.8636 44.9754 56.9408 44.5891C57.0181 44.2028 57.0185 43.8051 56.942 43.4187C56.8655 43.0322 56.7137 42.6646 56.4951 42.3369ZM54.5538 44.8325L48.5534 48.8325C48.3308 48.973 48.0628 49.0225 47.8047 48.9708C47.5467 48.9191 47.3184 48.7701 47.1672 48.5547C47.0201 48.3341 46.9667 48.0641 47.0188 47.8041C47.0708 47.5442 47.2239 47.3155 47.4445 47.1685L53.4454 43.1685C53.5546 43.0956 53.6771 43.045 53.8058 43.0195C53.9346 42.994 54.0671 42.9942 54.1959 43.02C54.3246 43.0458 54.4469 43.0968 54.5559 43.1699C54.6649 43.243 54.7584 43.337 54.8311 43.4463C54.9778 43.667 55.031 43.9369 54.979 44.1967C54.927 44.4566 54.7741 44.6852 54.5538 44.8325ZM38.9994 39C38.999 39.2651 38.8936 39.5192 38.7061 39.7067C38.5187 39.8942 38.2646 39.9996 37.9995 40H34.6677C34.5159 39.319 34.313 38.6504 34.0606 38H38.9994V39ZM32.9995 43C32.9995 45.3733 32.2956 47.6933 30.9771 49.6666C29.6585 51.6399 27.7844 53.1779 25.5917 54.0861C23.399 54.9943 20.9863 55.2319 18.6586 54.7689C16.3309 54.3058 14.1928 53.1629 12.5146 51.4847C10.8364 49.8065 9.6936 47.6684 9.23061 45.3407C8.76761 43.013 9.00526 40.6002 9.91349 38.4076C10.8217 36.2149 12.3598 34.3409 14.3331 33.0223C16.3064 31.7038 18.6264 31 20.9997 31C24.1812 31.0037 27.2313 32.2691 29.4809 34.5188C31.7305 36.7684 32.9959 39.8186 32.9995 43ZM13.3901 10.9995H10C9.73478 10.9995 9.48043 10.8942 9.29289 10.7066C9.10536 10.5191 9 10.2647 9 9.99951C9 9.7343 9.10536 9.47994 9.29289 9.29241C9.48043 9.10487 9.73478 8.99951 10 8.99951H14.9999C15.2277 9.00059 15.4484 9.07901 15.6258 9.22192C15.8032 9.36484 15.9269 9.56377 15.9764 9.78613L18.4759 21.2139C18.5247 21.4367 18.6483 21.6361 18.826 21.779C19.0037 21.922 19.2249 22 19.4529 22H35.9995C36.2647 22 36.519 22.1054 36.7066 22.2929C36.8941 22.4804 36.9995 22.7348 36.9995 23C36.9995 23.2652 36.8941 23.5196 36.7066 23.7071C36.519 23.8946 36.2647 24 35.9995 24H20.3279C20.1785 24.0001 20.0309 24.0336 19.8961 24.0982C19.7613 24.1628 19.6427 24.2568 19.549 24.3732C19.4553 24.4896 19.3889 24.6256 19.3546 24.7711C19.3203 24.9165 19.319 25.0678 19.3509 25.2139L20.1882 29.0411C19.5187 29.0739 18.8525 29.1548 18.1947 29.283L14.3671 11.7856C14.3183 11.5629 14.1948 11.3635 14.0171 11.2205C13.8394 11.0775 13.6181 10.9995 13.3901 10.9995ZM26.166 30C24.91 29.4979 23.5874 29.1822 22.2402 29.0628L21.5701 26H35.9995C36.3409 25.9966 36.6792 25.9342 36.9995 25.8157V30H26.166ZM33.1054 36C32.2108 34.459 31.032 33.1016 29.6314 32H39.9994C40.5297 32.0005 41.0381 32.2114 41.413 32.5864C41.7879 32.9613 41.9988 33.4697 41.9994 34V36H33.1054ZM39.9994 55C39.406 55 38.826 54.8241 38.3326 54.4944C37.8393 54.1648 37.4547 53.6963 37.2277 53.1481C37.0006 52.5999 36.9412 51.9967 37.0569 51.4148C37.1727 50.8328 37.4584 50.2983 37.8779 49.8787C38.2975 49.4591 38.8321 49.1734 39.414 49.0576C39.9959 48.9419 40.5991 49.0013 41.1473 49.2284C41.6955 49.4554 42.164 49.8399 42.4937 50.3333C42.8233 50.8266 42.9993 51.4067 42.9993 52C42.9984 52.7954 42.6821 53.5579 42.1197 54.1203C41.5573 54.6828 40.7947 54.9991 39.9994 55Z"
+                      fill="#897AE3" />
+                  </svg>
+
+                </div>
+                <div class="impact-content">
+                  <span class="impact-number">30</span>
+                  <span class="impact-label">توفير الأجهزة التعويضية المساندة</span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- FAQ Section -->
+      <section class="faq animate-on-scroll" id="faq" aria-labelledby="faq-title">
+        <div class="container">
+          <div class="d-flex justify-content-center">
+
+            <div class="faq-content">
+              <div class="section-header faq-section-header mb-4">
+                <h2 id="faq-title" class="section-title">انضم إلينا في إحداث تأثير إيجابي</h2>
+                <div class="d-flex justify-content-center w-100">
+                  <p class="section-subtitle faq-subtitle">لماذا أخترتنا؟ اكتشف ما لا مثيل له تأثير اختيار جمعيتنا الخيرية</p>
+                </div>
+              </div>
+              <div class="row">
+                <div class="col-lg-6">
+                  <details class="faq-item" open>
+                    <summary class="faq-question">1-كيف يمكنني التبرع لدعم مبتوري الاطراف؟</summary>
+                    <p class="faq-answer">
+                      يمكنك التبرع بشكل آمن من خلال موقعنا على الانترنت أو الاتصال بنا للحصول على خيارات أخرى.
+                    </p>
+                  </details>
+                  <details class="faq-item">
+                    <summary class="faq-question">2- هل يمكنني التطوع بدون خلفية طبية؟</summary>
+                    <p class="faq-answer">نعم، نحن نرحب بجميع المتطوعين بغض النظر عن خلفيتهم التعليمية.</p>
+                  </details>
+
+                  <details class="faq-item">
+                    <summary class="faq-question">3-هل تعمل على المستوى الدولي؟</summary>
+                    <p class="faq-answer">حالياً نركز على المملكة العربية السعودية، ولكن لدينا خطط للتوسع.</p>
+                  </details>
+                </div>
+                <div class="col-lg-6">
+                  <details class="faq-item" open>
+                    <summary class="faq-question">4- ما هي الخدمات التي تقدمها لمبتوري الاطراف؟</summary>
+                    <p class="faq-answer">
+                      نحن نقدم الرعاية الصحية الأولية والدعم النفسي واجهزة الاطراف الصناعية وخدمات توعية لاساخدام
+                      الاطراف
+                      الصناعية.
+                    </p>
+                  </details>
+                  <details class="faq-item">
+                    <summary class="faq-question">5- ما هي الخدمات التي تقدمها لمبتوري الاطراف؟</summary>
+                    <p class="faq-answer">نقدم مجموعة شاملة من الخدمات الطبية والنفسية والدعم المالي.</p>
+                  </details>
+                  <details class="faq-item">
+                    <summary class="faq-question">6- ما هي الخدمات التي تقدمها لمبتوري الاطراف؟</summary>
+                    <p class="faq-answer">يمكنك التواصل معنا عبر الموقع أو الهاتف للحصول على معلومات أكثر.</p>
+                  </details>
+                </div>
+
+              </div>
+            </div>
+
+
+          </div>
+        </div>
+      </section>
+
+      <!-- Blog Section -->
+      <section class="blog animate-on-scroll" id="articles" aria-labelledby="blog-title">
+        <div class="container">
+         
+          <div class="section-header  mb-5">
+            <h2 id="blog-title" class="section-title">بناء الروابط من خلال أعمال اللطف</h2>
+            <div class="d-flex justify-content-between w-100">
+              <p class="section-subtitle w-50">اكتشف آخر التحديثات لدينا وقصص التأثير</p>
+            <a href="#all-articles" class="btn btn-primary view-all-button">عرض جميع المقالات</a>
+
+            </div>
+          </div>
+          <div class="row g-4 mb-4">
+            <div class="col-md-4">
+              <article class="blog-card">
+                <img src="https://c.animaapp.com/mbhuc3ztEKGe70/img/rectangle-4-2.png" alt="صورة المقال"
+                  class="blog-image" />
+                <div class="blog-content">
+                  <h3 class="blog-title">تحويل المجتمعات من خلال المشاريع المستدامة</h3>
+                  <div class="blog-meta">
+                    <img src="https://c.animaapp.com/mbhuc3ztEKGe70/img/calendar.svg" alt="تاريخ النشر"
+                      class="blog-date-icon" aria-hidden="true" />
+                    <time class="blog-date" datetime="2023-08-21">21 أغسطس 2023</time>
+                  </div>
+                  <p class="blog-excerpt">
+                    العمل معًا لتحقيق أهداف مشتركة يقوي الروابط بين المجتمع, المجتمعات المتماسكة اجتماعياً مجهزة بشكل
+                    أفضل للتغلب على العقبات والتكيف
+                  </p>
+                  <a href="#article-1" class="btn btn-primary read-more">قراءة أكثر</a>
+                </div>
+              </article>
+            </div>
+            <div class="col-md-4">
+              <article class="blog-card">
+                <img src="https://c.animaapp.com/mbhuc3ztEKGe70/img/rectangle-4-3.png" alt="صورة المقال"
+                  class="blog-image" />
+                <div class="blog-content">
+                  <h3 class="blog-title">تحويل المجتمعات من خلال المشاريع المستدامة</h3>
+                  <div class="blog-meta">
+                    <img src="https://c.animaapp.com/mbhuc3ztEKGe70/img/calendar.svg" alt="تاريخ النشر"
+                      class="blog-date-icon" aria-hidden="true" />
+                    <time class="blog-date" datetime="2023-08-21">21 أغسطس 2023</time>
+                  </div>
+                  <p class="blog-excerpt">
+                    العمل معًا لتحقيق أهداف مشتركة يقوي الروابط بين المجتمع, المجتمعات المتماسكة اجتماعياً مجهزة بشكل
+                    أفضل للتغلب على العقبات والتكيف
+                  </p>
+                  <a href="#article-2" class="btn btn-primary read-more">قراءة أكثر</a>
+                </div>
+              </article>
+            </div>
+            <div class="col-md-4">
+              <article class="blog-card">
+                <img src="https://c.animaapp.com/mbhuc3ztEKGe70/img/rectangle-4-4.png" alt="صورة المقال"
+                  class="blog-image" />
+                <div class="blog-content">
+                  <h3 class="blog-title">تحويل المجتمعات من خلال المشاريع المستدامة</h3>
+                  <div class="blog-meta">
+                    <img src="https://c.animaapp.com/mbhuc3ztEKGe70/img/calendar.svg" alt="تاريخ النشر"
+                      class="blog-date-icon" aria-hidden="true" />
+                    <time class="blog-date" datetime="2023-08-21">21 أغسطس 2023</time>
+                  </div>
+                  <p class="blog-excerpt">
+                    العمل معًا لتحقيق أهداف مشتركة يقوي الروابط بين المجتمع, المجتمعات المتماسكة اجتماعياً مجهزة بشكل
+                    أفضل للتغلب على العقبات والتكيف
+                  </p>
+                  <a href="#article-3" class="btn btn-primary read-more">قراءة أكثر</a>
+                </div>
+              </article>
+            </div>
+          </div>
+         
+        </div>
+      </section>
+
+      <!-- Contact Section -->
+      <section class="contact animate-on-scroll" id="contact" aria-labelledby="contact-title">
+        <div class="container">
+          <div class="section-header text-center mb-5">
+            <h2 id="contact-title" class="section-title">اتصل بنا</h2>
+              <div class="d-flex justify-content-center w-100">
+
+            <p class="section-subtitle w-75">نحن نقدم المساعدة والمساعدة المخصصة لمبتوري الاطراف</p>
+           </div>
+          </div>
+          <div class="row g-4" >
+            <div class="col-lg-6" >
+              <div class="contact-info">
+                <div class="info-item">
+                  <div class="info-icon">
+                    <img src="https://c.animaapp.com/mbhuc3ztEKGe70/img/location.svg" alt="العنوان"
+                      aria-hidden="true" />
+                  </div>
+                  <div class="info-content">
+                    <h4 class="info-title">الرياض - حي المروج</h4>
+                    <p class="info-description">
+                      ابحث عن العناوين وساعات العمل و المزيد لكل من مواقعنا والشركات التابعة لنا.
+                    </p>
+                  </div>
+                </div>
+                <div class="info-item">
+                  <div class="info-icon">
+                    <img src="https://c.animaapp.com/mbhuc3ztEKGe70/img/call-outgoing.svg" alt="الهاتف"
+                      aria-hidden="true" />
+                  </div>
+                  <div class="info-content">
+                    <h4 class="info-title">
+                       <a href="tel:0552300321">0552300321</a> / <a href="tel:0112777900">0112777900</a>
+                    </h4>
+                    <p class="info-description">
+                      ابحث عن العناوين وساعات العمل و المزيد لكل من مواقعنا والشركات التابعة لنا.
+                    </p>
+                  </div>
+                </div>
+                <div class="info-item">
+                  <div class="info-icon">
+                    <img src="https://c.animaapp.com/mbhuc3ztEKGe70/img/sms.svg" alt="البريد الإلكتروني"
+                      aria-hidden="true" />
+                  </div>
+                  <div class="info-content">
+                    <h4 class="info-title">
+                      <a href="mailto:info@a-ca.sa">info@a-ca.sa</a>
+                    </h4>
+                    <p class="info-description">
+                      قبل أن تترك لنا خطًا أو تلتقط الهاتف،قد تجد إجابة في قائمة الأسئلة الشائعة لدينا.
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col-lg-6" >
+              <form class="contact-form" data-validate aria-label="نموذج الاتصال">
+                <h3 class="form-title">هل لديك سؤال أو تعليق؟</h3>
+                <p class="form-description">تواصل معنا من خلال النموذج أدناه ودعنا نبدأ محادثة حول إحداث فرق.</p>
+                <div class="form-group">
+                  <label for="name" class="visually-hidden">الاسم</label>
+                  <input type="text" id="name" name="name" class="form-control" placeholder="الاسم" required
+                    aria-required="true" />
+                </div>
+                <div class="form-group">
+                  <label for="email" class="visually-hidden">البريد الالكتروني</label>
+                  <input type="email" id="email" name="email" class="form-control" placeholder="البريد الالكتروني"
+                    required aria-required="true" />
+                </div>
+                <div class="form-group">
+                  <label for="message" class="visually-hidden">الرسالة</label>
+                  <textarea id="message" name="message" class="form-control" placeholder="الرسالة" required
+                    aria-required="true" minlength="10"></textarea>
+                </div>
+                <button type="submit" class="btn btn-primary submit-button w-100">ارسال</button>
+              </form>
+            </div>
+            
+          </div>
+        </div>
+      </section>
+
+      <!-- CTA Section -->
+      <section class="cta animate-on-scroll" aria-labelledby="cta-title">
+        <div class="container">
+          <div class="section-header text-center mb-5">
+            <h2 id="contact-title" class="section-title">امنح هدية الصحة: ​​تبرع الي مبتوري الاطراف </h2>
+              <div class="d-flex justify-content-center w-100">
+
+            <p class="section-subtitle w-75">
+              تحويل الحياة: دعم الصحة النفسية لمبتوري  الاطراف مع تبرعك
+            </p>
+           </div>
+          </div>
+         <a href="#donate" class="btn btn-primary w-25">تبرع الأن</a>
+
+        </div>
+      </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="footer" role="contentinfo">
+      <div class="container">
+        <div class="footer-content">
+          <div class="row g-4" > <div class="col-md-6 col-lg-3">
+              <div class="footer-section">
+                <img src="https://c.animaapp.com/mbhuc3ztEKGe70/img/image-17.png" alt="شعار الجمعية"
+                  class="footer-logo mb-3" />
+                  
+                <p class="footer-description">
+                  جمعية رسمية صحية متخصصة بمبتوري الأطراف وتقدم لهم خدمات تساعدهم على مواجهة التحديات والصعوبات وتساهم
+                  في
+                  تحسين جودة حياتهم، وتمكين قدراتهم الذاتية في خدمة أنفسهم وأسرهم دون الحاجة لمساعة الآخرين
+                </p>
+                <div class="social-links">
+                  <a href="#" class="social-link" aria-label="Instagram">
+                    <img src="https://c.animaapp.com/mbhuc3ztEKGe70/img/insta.png" alt="Instagram" />
+                  </a>
+                  <a href="#" class="social-link" aria-label="Facebook">
+                    <img src="https://c.animaapp.com/mbhuc3ztEKGe70/img/facebook.svg" alt="Facebook" />
+                  </a>
+                  <a href="#" class="social-link" aria-label="WhatsApp">
+                    <img src="https://c.animaapp.com/mbhuc3ztEKGe70/img/whatsapp.svg" alt="WhatsApp" />
+                  </a>
+                  <a href="#" class="social-link" aria-label="Pinterest">
+                    <img src="https://c.animaapp.com/mbhuc3ztEKGe70/img/pintrest.png" alt="Pinterest" />
+                  </a>
+                </div>
+              </div>
+            </div> <div class="col-md-6 col-lg-3">
+              <div class="footer-section">
+                <h3 class="footer-title">المميزات</h3>
+                <ul class="footer-list">
+                  <li><a href="#about" class="footer-link">عن بتور</a></li>
+                  <li><a href="#programs" class="footer-link">البرامج</a></li>
+                  <li><a href="prosthetic-care.html" class="footer-link">العناية بالاطراف الصناعية</a></li>
+                  <li><a href="#media" class="footer-link">المركز الاعلامي</a></li>
+                </ul>
+              </div>
+            </div> <div class="col-md-6 col-lg-3">
+              <div class="footer-section">
+                <h3 class="footer-title">عن الشركة</h3>
+                <ul class="footer-list">
+                  <li><a href="#faq" class="footer-link">الاسئلة الشائعة</a></li>
+                  <li><a href="#about-us" class="footer-link">من نحن</a></li>
+                  <li><a href="#contact" class="footer-link">تواصل معنا</a></li>
+                </ul>
+              </div>
+            </div>
+            <div class="col-md-6 col-lg-3">
+              <div class="footer-section">
+                <h3 class="footer-title">تواصل معنا</h3>
+                <ul class="footer-list">
+                  <li class="footer-item">
+                    <h4 class="footer-item-title">العنوان</h4>
+                    <p class="footer-item-content">الرياض - حي المروج</p>
+                  </li>
+                  <li class="footer-item">
+                    <h4 class="footer-item-title">البريد الالكتروني</h4>
+                    <p class="footer-item-content">APP@Gmail.com</p>
+                  </li>
+                  <li class="footer-item">
+                    <h4 class="footer-item-title">للاستشارات</h4>
+                    <p class="footer-item-content ">(+966) 8896-2220</p>
+                  </li>
+                </ul>
+              </div>
+            </div>
+           
+           
+           
+          </div>
+        </div>
+        <div class="footer-bottom">
+          <div class="row align-items-center">
+           
+            <div class="col-md-6 text-md-end">
+              <p class="copyright">
+© 2024 APP. جميع الحقوق محفوظة
+              </p>
+            </div> 
+            <div class="col-md-6">
+              <div class="footer-links">
+                <a href="#privacy" class="footer-link">سياسة الخصوصية</a>
+                <a href="#terms" class="footer-link">الشروط والاحكام</a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </footer>
+
+    <!-- Quick Donate Button -->
+    <div class="quick-donate">
+      <span class="quick-donate-text">التبرع السريع</span>
+      <button class="quick-donate-button" aria-label="التبرع السريع">
+        <img src="https://c.animaapp.com/mbhuc3ztEKGe70/img/add-circle.svg" alt="" aria-hidden="true" />
+      </button>
+    </div>
+
+    <!-- Scroll to Top Button -->
+    <button id="scroll-top" class="scroll-top" aria-label="العودة إلى الأعلى">
+      <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <path d="M12 19V5M5 12L12 5L19 12" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+          stroke-linejoin="round" />
+      </svg>
+    </button>
+  </div>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+  <script src="js/main.js"></script>
+</body>
+
+</html>
