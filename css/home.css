@@ -45,6 +45,7 @@
    width: 73.93%;
   display: flex;
   justify-content: flex-end;
+  margin-inline-end: 6px;
   align-items: center;
 }
 
@@ -512,11 +513,16 @@
 }
 
 .faq-question::after {
-  content: "▼";
+  content: "";
   position: absolute;
   left: var(--spacing-md);
   top: 50%;
   transform: translateY(-50%);
+  width: 24px;
+  height: 24px;
+  background-image: url("data:image/svg+xml;utf8,<svg width='24' height='24' viewBox='0 0 24 24' fill='none' xmlns='http://www.w3.org/2000/svg'><path d='M12 7.20011C12.7 7.20011 13.4 7.47011 13.93 8.00011L20.45 14.5201C20.74 14.8101 20.74 15.2901 20.45 15.5801C20.16 15.8701 19.68 15.8701 19.39 15.5801L12.87 9.06011C12.39 8.58011 11.61 8.58011 11.13 9.06011L4.60998 15.5801C4.31998 15.8701 3.83998 15.8701 3.54998 15.5801C3.25998 15.2901 3.25998 14.8101 3.54998 14.5201L10.07 8.00011C10.6 7.47011 11.3 7.20011 12 7.20011Z' fill='%23292D32'/></svg>");
+  background-repeat: no-repeat;
+  background-size: contain;
   transition: transform var(--transition-base);
 }
 
